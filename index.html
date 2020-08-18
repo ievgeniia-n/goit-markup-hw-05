@@ -57,20 +57,25 @@
 					<br />
 					для Вашего бизнеса
 				</h1>
-				<a href="#" class="order-link">заказать услугу</a>
-				<div class="backdrop">
+				<a href="#" class="order-link" data-modal-open>заказать услугу</a>
+
+				<div class="backdrop is-hidden" data-modal>
 					<div class="modal">
-						<button>X</button>
+						<button data-modal-close class="button-close">
+							<svg class="icon-close">
+								<use href="./images/sprite.svg#close"></use>
+							</svg>
+						</button>
 					</div>
 				</div>
 			</section>
 
 <!--Наши приемущества -->
-			<section class="advantages">
-				<div class="container">
+<section class="advantages">
+		<div class="container">
 					
-					<ul class="advantages-list">
-						<li class="list-item antenna">
+			<ul class="advantages-list">
+			<li class="list-item antenna">
 							<h3 class="title">Внимание к деталям</h3>
 							<p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
 						</li>
@@ -326,5 +331,6 @@
 			</div>
 			
 		</footer>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>

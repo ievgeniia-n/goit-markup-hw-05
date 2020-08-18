@@ -28,9 +28,7 @@
 	padding-left: 15px;
 	padding-right: 15px;
 	width: 1230px;
-	
 }
-
 
 .container-main {
 	max-width: 1600px;
@@ -73,15 +71,12 @@ ul {
 	color: var(--accent-color);
 }
 
-
-
 .contact-item {
 	margin-right: 10px;
 	fill: #757575;
 }
 .page-header {
 	border: 1px solid #ececec;
-	
 }
 .main-nav {
 	padding-top: 24px;
@@ -155,7 +150,6 @@ ul {
 	transition-duration: 250ms;
 	transition-timing-function: var(--timing-function);
 	color: var(--accent-color);
-
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
@@ -276,9 +270,7 @@ ul {
 	background-repeat: no-repeat;
 	background-position: center;
 	position: relative;
-	
 }
-
 
 .example1::before {
 	background-image: url(../images/example1.jpg);
@@ -368,7 +360,7 @@ ul {
 }
 
 .network-icon-member {
-	fill:#AFB1B8;
+	fill: #afb1b8;
 }
 .team-member {
 	margin-top: 0;
@@ -436,12 +428,10 @@ ul {
 }
 
 .img-clients-icon {
-	fill:#AFB1B8;
+	fill: #afb1b8;
 	transition-duration: 250ms;
 	transition-timing-function: var(--timing-function);
 }
-
-
 
 .client-link:hover .img-clients-icon,
 .client-link:focus .img-clients-icon {
@@ -567,7 +557,6 @@ address .link {
 	border: 1px solid #eeeeee;
 }
 
-
 .img1::before {
 	background-image: url(../images/img1.jpg);
 	position: relative;
@@ -654,7 +643,7 @@ footer {
 }
 
 .network-item-link:hover,
-.network-item-link:focus {	
+.network-item-link:focus {
 	background-color: var(--accent-color);
 	transition-duration: 250ms;
 	transition-timing-function: var(--timing-function);
@@ -665,11 +654,14 @@ footer {
 }
 
 .backdrop {
-position: fixed;
-width: 1600px;
-height: 1024px;
-top: 0;
-background: rgba(0, 0, 0, 0.2);
+	position: fixed;
+	width: 1600px;
+	height: 1024px;
+	top: 0;
+	background: rgba(0, 0, 0, 0.2);
+	transition-duration: 250ms;
+	transition-timing-function: var(--timing-function);
+	z-index: 999;
 }
 
 .modal {
@@ -681,5 +673,27 @@ background: rgba(0, 0, 0, 0.2);
 	height: 581px;
 	background-color: var(--white);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.backdrop.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.button-close {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	background-size: content;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	fill: #000000;
+}
+
+.icon-close {
+	width: 11px;
+	height: 11px;
 }
